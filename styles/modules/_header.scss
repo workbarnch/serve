@@ -1,0 +1,37 @@
+header{
+  background-color: $header-bg;
+  padding: 13px 0;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $white-text;
+    font-weight: 300;
+  }
+  .header__menu{
+    ul{
+      display: flex;
+      list-style: none;
+      li{
+        a{
+          color: $white-text;
+          text-decoration: none;
+          font-weight: normal;
+          font-size: 14px;
+          margin-left: 30px;
+        }
+        &:first-child{
+          a{
+            margin-left: 0;
+          }
+        }
+
+      }
+    }
+  }
+}
