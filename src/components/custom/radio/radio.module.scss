@@ -1,13 +1,16 @@
 $color: #0F1D5B;
 .radio {
   display: flex;
-  align-items: center;
   position: relative;
-
+  label {
+    display: flex;
+  }
   .buttons{
     display: flex;
     width: 15px;
     height: 15px;
+    min-width: 15px;
+    min-height: 15px;
     position: relative;
     margin: 0 5px;
     border-radius: 50%;
@@ -32,7 +35,7 @@ $color: #0F1D5B;
     display: none;
   }
 
-  input:checked + .buttons > span:last-child {
+  input:checked + label >.buttons > span:last-child {
     opacity: 1;
 
   }

@@ -4,7 +4,7 @@ import style from './radio.module.scss';
 export default function Radio(props) {
 
     return (
-        <div className={`${style.radio} ${props.unicClass ? props.unicClass : ''}`}>
+        <div className={`${style.radio}`}>
             <input
                 type="radio"
                 name={props.name ? props.name : ''}
@@ -12,15 +12,16 @@ export default function Radio(props) {
                 value={props.value ? props.value : ''}
                 onChange={props.onChange}
             />
-            <div className={style.buttons}>
-                <span style={props.color ? {borderColor: props.color} : {}}></span>
-                <span style={props.color ? {borderColor: props.color} : {}}></span>
-            </div>
-            {
-                props.children ?
-                    <label htmlFor={props.id ? props.id : ''}>{props.children}</label> :
-                    null
-            }
+
+            <label htmlFor={props.id ? props.id : ''}>
+                <div className={`${style.buttons} ${props.unicClass ? props.unicClass : ''}`}>
+                    <span style={props.color ? {borderColor: props.color} : {}}></span>
+                    <span style={props.color ? {borderColor: props.color} : {}}></span>
+                </div>
+                {props.children? props.children : ''}
+            </label>
+
+
 
         </div>
     )

@@ -1,5 +1,6 @@
+$text-color: #0F1D5B;
 .container {
-  margin: 50px;
+  padding: 30px 100px;
 }
 
 .selectSystem {
@@ -8,17 +9,20 @@
     padding: 20px;
   ul {
     display: flex;
-  
-
     li {
-      width: 50%;
+      max-width: 380px;
       display: flex;
-      span {
-        margin-left: 15px;
+      margin-right: 100px;
+      &:last-child {
+        margin-right: 0;
       }
-      input{
-          width: 20px;
-          height: 20px;
+      span {
+        display: block;
+        color: $text-color;
+      }
+      .content__navigation__buttons{
+        margin: 0;
+        margin-right: 20px;
       }
     }
   }
@@ -29,14 +33,14 @@
 }
 
 .services{
-    width: 30%;
+    width: 2%;
     min-width: 300px;
-    
-   
+
+
     ul{
         width: 100%;
         li{
-           display: flex; 
+           display: flex;
            align-items: center;
            margin-top: 30px;
            padding:10px 25px;
