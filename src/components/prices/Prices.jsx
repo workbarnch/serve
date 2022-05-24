@@ -1,17 +1,18 @@
 import style from "../prices/prices.module.scss";
-import tooth from "../images/icons/tooth.svg";
-import grozi from "../images/icons/grozi.svg";
-import klinikos from "../images/icons/klinikos.svg";
-import spa from "../images/icons/spa.svg";
-import reab from "../images/icons/reab.svg";
-import sporto from "../images/icons/sporto.svg";
-import veterinar from "../images/icons/veterinar.svg";
-import autoservisa from "../images/icons/autoservisa.svg";
-import hands from "../images/icons/hands.svg";
+import tooth from "../../images/icons/tooth.svg";
+import grozi from "../../images/icons/grozi.svg";
+import klinikos from "../../images/icons/klinikos.svg";
+import spa from "../../images/icons/spa.svg";
+import reab from "../../images/icons/reab.svg";
+import sporto from "../../images/icons/sporto.svg";
+import veterinar from "../../images/icons/veterinar.svg";
+import autoservisa from "../../images/icons/autoservisa.svg";
+import hands from "../../images/icons/hands.svg";
 import Radio from "../custom/radio/Radio";
 import Checkbox from "../custom/checkbox/Checkbox";
 import DropDown from "../custom/dropdown/DropDown";
 import CountInput from "../custom/countinput/CountInput";
+import ChooseContract from "../chooseContract/ChooseContract";
 
 export default function Prices() {
     return (
@@ -45,58 +46,58 @@ export default function Prices() {
                 <div className={style.services}>
                     <ul>
                         <li>
-                            <div>
-                                <img src={tooth.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span><img src={tooth.src} alt="tooth" /></span>
+                                <p>Odontologijos klinikos</p>
                             </div>
-                            <span>Odontologijos klinikos</span>
                         </li>
                         <li>
-                            <div>
-                                <img src={grozi.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span><img src={klinikos.src} alt="klinikos"/></span>
+                                <p>Grožio centrai ir kirpyklos </p>
                             </div>
-                            <span>Klinikos ir estetinės medicinos įstaigos </span>
                         </li>
                         <li>
-                            <div>
-                                <img src={klinikos.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span><img src={grozi.src} alt="grozi" /></span>
+                                <p>Odontologijos klinikos</p>
                             </div>
-                            <span>Grožio centrai ir kirpyklos </span>
                         </li>
                         <li>
-                            <div>
-                                <img src={spa.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span> <img src={spa.src} alt="spa" /></span>
+                                <p>SPA ir masažo centrai</p>
                             </div>
-                            <span>SPA ir masažo centrai</span>
                         </li>
                         <li>
-                            <div>
-                                <img src={reab.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span><img src={reab.src} alt="reab"/></span>
+                                <p>Reabilitacijos centrai</p>
                             </div>
-                            <span>Reabilitacijos centrai</span>
                         </li>
                         <li>
-                            <div>
-                                <img src={sporto.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span> <img src={sporto.src} alt="sporto"/></span>
+                                <p>Sporto centrai</p>
                             </div>
-                            <span>Sporto centrai</span>
                         </li>
                         <li>
-                            <div>
-                                <img src={veterinar.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span><img src={veterinar.src} alt="veterinar"/></span>
+                                <p>Veterinarijos klinikos </p>
                             </div>
-                            <span>Veterinarijos klinikos </span>
                         </li>
                         <li>
-                            <div>
-                                <img src={autoservisa.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span><img src={autoservisa.src} alt="autoservisa"/></span>
+                                <p>Autoservisu paslaugas</p>
                             </div>
-                            <span>Autoservisu paslaugas</span>
                         </li>
                         <li>
-                            <div>
-                                <img src={hands.src} alt=""/>
+                            <div className={style.servicBlock}>
+                                <span><img src={hands.src} alt="hands"/></span>
+                                <p>Patalpu valymo paslaugos</p>
                             </div>
-                            <span>Patalpu valymo paslaugos</span>
                         </li>
                     </ul>
                 </div>
@@ -236,7 +237,7 @@ export default function Prices() {
                     </div>
                 </div>
                 <div className={style.right__block}>
-                    dasad
+                    <ChooseContract />
                 </div>
             </div>
         </div>

@@ -1,7 +1,4 @@
 import PageTitle from "../../src/components/pagetitle/PageTitle";
-import Radio from "../../src/components/custom/radio/Radio";
-import Checkbox from "../../src/components/custom/checkbox/Checkbox";
-import DropDown from "../../src/components/custom/dropdown/DropDown";
 import Prices from "../../src/components/prices/Prices";
 
 export default function Kainos(){

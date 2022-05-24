@@ -1,6 +1,6 @@
 import style from "../request/request.module.scss";
-import telegram from "../images/icons/telegram.svg";
-import girlPic1 from  "../images/icons/1.svg";
+import telegram from "../../images/icons/telegram.svg";
+import girlPic1 from "../../images/icons/1.svg";
 
 export default function Request() {
   return (
@@ -9,7 +9,7 @@ export default function Request() {
         <h2>Prašymas</h2>
         <div className={style.address}>
           <p><b>Vardenis Pavardenis</b></p>
-          <p>Adr.: Saulės g. 2 -34, Vilnius</p> 
+          <p>Adr.: Saulės g. 2 -34, Vilnius</p>
         </div>
         <div className={style.subTitle}><span>Prašome deaktyvuoti mano profilį ir nuasmeninti mano duomenis 2022-05-02.</span></div>
         <a href="#" className={style.iconWrapp}>
