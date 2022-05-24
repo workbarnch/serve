@@ -10,9 +10,6 @@ export default function Layout({ children }){
         <div>
             <Header/>
             <main className="container">{ children }</main>
-             {/* <Request/> */}
-             {/* <BusinessInfo/> */}
-             <Prices/>
             <Footer/>
         </div>
     )

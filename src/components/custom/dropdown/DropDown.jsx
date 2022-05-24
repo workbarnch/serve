@@ -25,9 +25,9 @@ export default function DropDown(props) {
                 <div className={arrowClass}></div>
             </div>
             {
-                isOpen ?
+                isOpen && props.children?
                     <div className={contentClass}>
-                        {props.children ? props.children : 'asdasdasdsa'}
+                        {props.children}
                     </div>: null
 
             }
