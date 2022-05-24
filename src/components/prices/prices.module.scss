@@ -1,12 +1,12 @@
-$text-color: #0F1D5B;
+$text-color: #0f1d5b;
 .container {
-  padding: 30px 100px;
+  padding: 15px 100px;
 }
 
 .selectSystem {
-    width: 100%;
-    border-bottom: 1px solid #c1c1c1;
-    padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid #c1c1c1;
+  padding: 20px;
   ul {
     display: flex;
     li {
@@ -20,7 +20,7 @@ $text-color: #0F1D5B;
         display: block;
         color: $text-color;
       }
-      .content__navigation__buttons{
+      .content__navigation__buttons {
         margin: 0;
         margin-right: 20px;
       }
@@ -32,29 +32,86 @@ $text-color: #0F1D5B;
   }
 }
 
-.services{
-    width: 2%;
-    min-width: 300px;
+.services {
+  width: 25%;
+  min-width: 300px;
 
-
-    ul{
-        width: 100%;
-        li{
-           display: flex;
-           align-items: center;
-           margin-top: 30px;
-           padding:10px 25px;
-           border-radius: 50px;
-                //    background-color:#FDF8F2;
-            img{
-                width: 30px;
-            }
-            span{
-                margin-left: 20px;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 25px;
-            }
+  ul {
+    width: 100%;
+    li {
+      .servicBlock {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        border-radius: 50px;
+        background-color:#f7f6f7;
+        span {
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
+        
+      }
+      img {
+        width: 35px;
+      }
+      p {
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 0 5px;
+      }
+      &:nth-child(1){
+        span{
+          background-color: #F4F7FD;
+        }
+      }
+      &:nth-child(2){
+        span{
+          background-color: #FBEBEF;
+        }
+      }
+      &:nth-child(3){
+        span{
+          background-color: #F9E4F3;
+        }
+      }
+      &:nth-child(4){
+        span{
+          background-color: #FDF8E7;
+        }
+      }
+      &:nth-child(5){
+        span{
+          background-color: #F1F9FA;
+        }
+      }
+      &:nth-child(6){
+        span{
+          background-color: #FBF4EB;
+        }
+      }
+      &:nth-child(7){
+        span{
+          background-color: #E8F6F0;
+        }
+      }
+      &:nth-child(8){
+        span{
+          background-color: #F1F3FA;
+        }
+      }
+      &:nth-child(9){
+        span{
+          background-color: #F1EBFB;
+        }
+      }
+
     }
+    
+  }
 }

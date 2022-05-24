@@ -11,91 +11,102 @@ import hands from "../images/icons/hands.svg";
 import Radio from "../custom/radio/Radio";
 
 export default function Prices() {
-    return (
-        <div className={style.container}>
-            <div className={style.selectSystem}>
-                <h2>Pasirinkite sistema</h2>
-                <ul>
-                    <li>
-                        <Radio name={'content__navigation'} id={'content__navigation-1'} value={1}
-                               unicClass={style.content__navigation__buttons}>
+  return (
+    <div className={style.container}>
+      <div className={style.selectSystem}>
+        <h2>Pasirinkite sistema</h2>
+        <ul>
+          <li>
+            <Radio
+              name={"content__navigation"}
+              id={"content__navigation-1"}
+              value={1}
+              unicClass={style.content__navigation__buttons}
+            >
               <span>
-                  <b>Kompiuterinė sistema „Serve Professionals”</b>
-                  <p>Į Jūsų kompiuterinę įrangą įdiegiama sistema ir duomenų bazė.</p>
-                </span>
-                        </Radio>
-                    </li>
-                    <li>
-                        <Radio name={'content__navigation'} id={'content__navigation-2'} value={2}
-                               unicClass={style.content__navigation__buttons}>
-                  <span>
-                      <b>Naršyklinė sistema „ServePro”</b>
-                      <p>Prie savo sistemos ir duomenų bazės esančios mūsų serveryje jungiatės per naršyklę.</p>
-                    </span>
-                        </Radio>
-                    </li>
-                </ul>
+                <b>Kompiuterinė sistema „Serve Professionals”</b>
+                <p>
+                  Į Jūsų kompiuterinę įrangą įdiegiama sistema ir duomenų bazė.
+                </p>
+              </span>
+            </Radio>
+          </li>
+          <li>
+            <Radio
+              name={"content__navigation"}
+              id={"content__navigation-2"}
+              value={2}
+              unicClass={style.content__navigation__buttons}
+            >
+              <span>
+                <b>Naršyklinė sistema „ServePro”</b>
+                <p>
+                  Prie savo sistemos ir duomenų bazės esančios mūsų serveryje
+                  jungiatės per naršyklę.
+                </p>
+              </span>
+            </Radio>
+          </li>
+        </ul>
+      </div>
+      <div className={style.services}>
+        <ul>
+          <li>
+            <div className={style.servicBlock}>
+              <span><img src={tooth.src} alt="tooth" /></span>
+              <p>Odontologijos klinikos</p>
             </div>
-            <div>
+          </li>
+          <li>
+            <div className={style.servicBlock}>
+              <span><img src={klinikos.src} alt="klinikos"/></span>
+              <p>Grožio centrai ir kirpyklos </p>
             </div>
-            <div className={style.services}>
-                <ul>
-                    <li>
-                        <div>
-                            <img src={tooth.src} alt=""/>
-                        </div>
-                        <span>Odontologijos klinikos</span>
-                    </li>
-                    <li>
-                        <div>
-                            <img src={grozi.src} alt=""/>
-                        </div>
-                        <span>Klinikos ir estetinės medicinos įstaigos </span>
-                    </li>
-                    <li>
-                        <div>
-                            <img src={klinikos.src} alt=""/>
-                        </div>
-                        <span>Grožio centrai ir kirpyklos </span>
-                    </li>
-                    <li>
-                        <div>
-                            <img src={spa.src} alt=""/>
-                        </div>
-                        <span>SPA ir masažo centrai</span>
-                    </li>
-                    <li>
-                        <div>
-                            <img src={reab.src} alt=""/>
-                        </div>
-                        <span>Reabilitacijos centrai</span>
-                    </li>
-                    <li>
-                        <div>
-                            <img src={sporto.src} alt=""/>
-                        </div>
-                        <span>Sporto centrai</span>
-                    </li>
-                    <li>
-                        <div>
-                            <img src={veterinar.src} alt=""/>
-                        </div>
-                        <span>Veterinarijos klinikos </span>
-                    </li>
-                    <li>
-                        <div>
-                            <img src={autoservisa.src} alt=""/>
-                        </div>
-                        <span>Autoservisu paslaugas</span>
-                    </li>
-                    <li>
-                        <div>
-                            <img src={hands.src} alt=""/>
-                        </div>
-                        <span>Patalpu valymo paslaugos</span>
-                    </li>
-                </ul>
+          </li>
+          <li>
+            <div className={style.servicBlock}>
+              <span><img src={grozi.src} alt="grozi" /></span>
+              <p>Odontologijos klinikos</p>
             </div>
-        </div>
-    );
+          </li>
+          <li>
+            <div className={style.servicBlock}>
+              <span> <img src={spa.src} alt="spa" /></span>
+              <p>SPA ir masažo centrai</p>
+            </div>
+          </li>
+          <li>
+            <div className={style.servicBlock}>
+              <span><img src={reab.src} alt="reab"/></span>
+              <p>Reabilitacijos centrai</p>
+            </div>
+          </li>
+          <li>
+            <div className={style.servicBlock}>
+              <span> <img src={sporto.src} alt="sporto"/></span>
+              <p>Sporto centrai</p>
+            </div>
+          </li>
+          <li>
+            <div className={style.servicBlock}>
+              <span><img src={veterinar.src} alt="veterinar"/></span>
+              <p>Veterinarijos klinikos </p>
+            </div>
+          </li>
+          <li>
+            <div className={style.servicBlock}>
+              <span><img src={autoservisa.src} alt="autoservisa"/></span>
+              <p>Autoservisu paslaugas</p>
+            </div>
+          </li>
+          <li>
+            <div className={style.servicBlock}>
+              <span><img src={hands.src} alt="hands"/></span>
+              <p>Patalpu valymo paslaugos</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
