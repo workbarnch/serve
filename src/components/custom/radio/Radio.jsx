@@ -7,6 +7,7 @@ export default function Radio(props) {
         <div className={`${style.radio}`}>
             <input
                 type="radio"
+                defaultChecked={props.checked?props.checked:false}
                 name={props.name ? props.name : ''}
                 id={props.id ? props.id : ''}
                 value={props.value ? props.value : ''}
