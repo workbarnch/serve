@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: rgb(245, 253, 253);
+  margin: auto;
+}
+.iconWrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 258px;
+  background: #ffa35f 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+  span {
+    color: #ffffff;
+    margin-left: 10px;
+  }
+}
+.iconWrapp img {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+.titleWrapp {
+  color: #0f1d5b;
+}
+.titleWrapp h2 {
+  padding-bottom: 45px;
+  font-size: 40px;
+}
+.rightImage img {
+  width: 100%;
+  height: 520px;
+}
+.subTitle {
+  margin: 49px 0 63px;
+}
+.address {
+  line-height: 30px;
+}

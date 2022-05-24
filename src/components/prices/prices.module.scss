@@ -1,0 +1,56 @@
+.container {
+  margin: 50px;
+}
+
+.selectSystem {
+    width: 100%;
+    border-bottom: 1px solid #c1c1c1;
+    padding: 20px;
+  ul {
+    display: flex;
+  
+
+    li {
+      width: 50%;
+      display: flex;
+      span {
+        margin-left: 15px;
+      }
+      input{
+          width: 20px;
+          height: 20px;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.services{
+    width: 30%;
+    min-width: 300px;
+    
+   
+    ul{
+        width: 100%;
+        li{
+           display: flex; 
+           align-items: center;
+           margin-top: 30px;
+           padding:10px 25px;
+           border-radius: 50px;
+                //    background-color:#FDF8F2;
+            img{
+                width: 30px;
+            }
+            span{
+                margin-left: 20px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }
+}

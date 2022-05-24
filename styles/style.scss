@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import 'modules/var';
 @import "modules/header";
+
 @import "modules/footer";
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 html, body{
@@ -23,3 +26,6 @@ html, body{
 main{
   flex: 1;
 }
+footer{
+}
+
