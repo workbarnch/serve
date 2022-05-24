@@ -97,20 +97,6 @@ export default function Prices() {
           </li>
         </ul>
       </div>
-      <div classNazme={style.buyModal}>
-         <ul>
-           <li>
-              <div>
-                <input type="radio" />
-              </div>
-             <div>
-               <p>Neterminuota sutartis</p>
-               <p>Metine sutartis</p>
-               </div>
-               <span>15,00 €</span>
-           </li>
-         </ul>
-      </div>
     </div>
   );
 }
