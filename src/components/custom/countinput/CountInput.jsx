@@ -15,9 +15,9 @@ export default function ({onChange, unicClass= '', defaultValue = 0 }){
     }
     return(
         <div className={`${style.container} ${unicClass}`}>
-            <span onClick={decriment} ></span>
+            <button onClick={decriment} ></button>
             <input type="number" value={value} onChange={onChange ? onChange : handleChange}/>
-            <span onClick={incriment}></span>
+            <button onClick={incriment}></button>
         </div>
     )
 }

@@ -11,10 +11,11 @@ $mobile: 480px;
   align-items: center;
   position: relative;
 
-  span{
+  button{
     position: absolute;
     border: 8px solid transparent;
     display: block;
+    background: none                                ;
     cursor: pointer;
     &:nth-of-type(1){
       border-right: 12px solid $text-color;
@@ -54,7 +55,7 @@ $mobile: 480px;
     width: 100%;
     height: 40px;
 
-    span{
+    button{
       border: 5px solid transparent;
       &:nth-of-type(1){
         border-right: 10px solid $text-color;
