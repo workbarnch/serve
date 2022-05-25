@@ -9,7 +9,7 @@ export default function ContentTwo(){
             <div className={style.module}>
                 <h3>Pasirinkite modulius</h3>
                 <div className={style.modules__items}>
-                    <Checkbox id={'t'} unicClass={style.modules__checkbox} checked/>
+                    <Checkbox id={'one'} unicClass={style.modules__checkbox} checked/>
                     <DropDown title={'Sąsaja su „Serve Online“ rezervacijų sistema“'}>
                         <div className={style.dropdown__item}>
                             lorem ipsum
@@ -26,7 +26,7 @@ export default function ContentTwo(){
             <div className={style.module}>
                 <h3>Pasirinkite modulius</h3>
                 <div className={style.modules__items}>
-                    <Checkbox id={'t'} unicClass={style.modules__checkbox}/>
+                    <Checkbox id={'two'} unicClass={style.modules__checkbox}/>
                     <DropDown title={'Sąsaja su „Serve Online“ rezervacijų sistema“'}>
                         <div className={style.dropdown__item}>
                             lorem ipsum
