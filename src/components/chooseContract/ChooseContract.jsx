@@ -9,34 +9,40 @@ export default function ChooseContract() {
       <div className={style.buyContent}>
         <ul>
           <li>
-            <Radio name={"choose__content"} id={"choose__content-1"} value={1}>
-              <div>
+            <Radio
+              name={"choose__contract"}
+              id={"choose__contract-1"}
+              value={1}
+            >
+              <div className={style.textWrap}>
                 <p>
                   <b>Neterminuota sutartis</b>
                 </p>
-                <p>kaina menesiui</p>
+                <span>kaina menesiui</span>
               </div>
-              <div>
+              <div className={style.priceWrap}>
                 <span>
                   <b>15,00 €</b>
                 </span>
-                <span></span>
               </div>
             </Radio>
           </li>
           <li>
-            <Radio name={"choose__content"} id={"choose__content-2"} value={2}>
-              <div>
+            <Radio 
+               name={"choose__contract"}
+               id={"choose__contract-2"}
+               value={2}
+            >
+              <div className={style.textWrap}>
                 <p>
                   <b>Metine sutartis</b>
                 </p>
-                <p>kaina menesiui</p>
+                <span>kaina menesiui</span>
               </div>
-              <div>
+              <div className={style.priceWrap}>
                 <span>
                   <b>15,00 €</b>
                 </span>
-                <span></span>
               </div>
             </Radio>
           </li>

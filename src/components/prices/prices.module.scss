@@ -4,10 +4,6 @@ $border-color: #9399B5;
 $mobile: 480px;
 $ipade: 768px;
 
-.container {
-  padding: 30px 100px;
-
-}
 
 .selectSystem {
   width: 100%;
@@ -178,11 +174,16 @@ $ipade: 768px;
 
 .right__block {
   width: 30%;
+  min-width: 400px;
+  margin-left: 20px;
 }
 
 @media (max-width: $ipade) {
   .container {
     padding: 20px;
+  }
+  .right__block{
+    margin-left: 0;
   }
   .selectSystem {
     ul {
