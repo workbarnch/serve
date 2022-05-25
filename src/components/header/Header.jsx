@@ -1,12 +1,13 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
+import Link from "next/link";
+
 
 export default function Header() {
     const router = useRouter();
     return (
         <header>
             <div className="logo">
-                <h3 className='logo'>Serve</h3>
+                <h3>serve</h3>
             </div>
             <nav className='header__menu'>
                 <ul>

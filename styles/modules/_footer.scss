@@ -1,15 +1,10 @@
 footer{
   display: flex;
+  align-items: center;
   padding: 28px 30px 20px 30px;
   background-color: $footer-bg;
   .logo{
     padding-right: 60px;
-    h3{
-      font-size: 22px;
-      text-transform: uppercase;
-      color: $white-text;
-      font-weight: 300;
-    }
   }
   nav{
     ul{

@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="logo">
-                <h3>SERVE</h3>
+                <h3>serve</h3>
             </div>
             <nav>
                 <ul>
