@@ -1,3 +1,9 @@
+$text-color: #0f1d5b;
+$border-color: #9399b5;
+
+$mobile: 480px;
+$ipade: 768px;
+
 .container {
   padding: 30px 100px;
 }
@@ -11,7 +17,7 @@
     background-color: #f7f6f7;
     li {
       display: flex;
-      
+
       padding: 30px 0;
       &:nth-child(1) {
         border-bottom: 1px solid #c1c1c1;
@@ -44,8 +50,7 @@
       margin-bottom: 5px;
     }
     a:nth-child(1) img,
-    a:nth-child(2) img
-    {
+    a:nth-child(2) img {
       width: 20px;
       height: 20px;
       margin-right: 10px;
@@ -60,8 +65,16 @@
       border: 1px solid #ff9954;
     }
 
-      a:nth-child(2) span {
-        color: #ff9954;
-      }
+    a:nth-child(2) span {
+      color: #ff9954;
+    }
+  }
+}
+@media (max-width: $ipade) {
+  .container {
+    padding: 0;
+  }
+  .buyContent {
+    width: 100%;
   }
 }
