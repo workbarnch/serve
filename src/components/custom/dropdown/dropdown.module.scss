@@ -1,6 +1,10 @@
 $hide-color: #0F1D5B;
 $show-color: #101B51;
 $contet-bg: #F7F6F7;
+
+$mobile: 480px;
+$ipade: 768px;
+
 .dropdown{
   width: 100%;
   .dropdown__title{
@@ -62,4 +66,10 @@ $contet-bg: #F7F6F7;
   margin-top: 5px ;
   border-bottom: 1px solid $show-color;
   border-right: 1px solid $show-color;
+}
+
+@media (max-width: $ipade) {
+  .dropdown__content{
+      background:none;
+  }
 }

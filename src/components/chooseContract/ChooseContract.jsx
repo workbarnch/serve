@@ -20,12 +20,12 @@ export default function ChooseContract() {
                 </p>
                 <span>kaina menesiui</span>
               </div>
-              <div className={style.priceWrap}>
+            </Radio>
+            <div className={style.priceWrap}>
                 <span>
                   <b>15,00 €</b>
                 </span>
               </div>
-            </Radio>
           </li>
           <li>
             <Radio 
@@ -39,12 +39,12 @@ export default function ChooseContract() {
                 </p>
                 <span>kaina menesiui</span>
               </div>
-              <div className={style.priceWrap}>
+            </Radio>
+            <div className={style.priceWrap}>
                 <span>
                   <b>15,00 €</b>
                 </span>
               </div>
-            </Radio>
           </li>
         </ul>
         <div className={style.buttonWrapp}>
