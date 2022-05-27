@@ -11,121 +11,140 @@ import hands from "../../images/icons/hands.svg";
 import Radio from "../custom/radio/Radio";
 import ChooseContract from "../chooseContract/ChooseContract";
 import ContentTwo from "./ContentTwo";
-import {useState} from "react";
+import { useState } from "react";
 import ContentOne from "./ContentOne";
 
 export default function Prices() {
-    const [content, setContent] = useState(1)
-    const changeContent = (e) => {
-        setContent(+e.target.value)
-    }
-    return (
-        <div className={style.container}>
-            <div className={style.selectSystem}>
-                <h2>Pasirinkite sistema</h2>
-                <ul>
-                    <li>
-                        <Radio
-                            name={'content__navigation'}
-                            id={'content__navigation-1'}
-                            value={1}
-                            checked={content === 1}
-                            unicClass={style.content__navigation__buttons}
-                            onChange={changeContent}
-                        >
+  const [content, setContent] = useState(1);
+  const changeContent = (e) => {
+    setContent(+e.target.value);
+  };
+  return (
+    <div className={style.container}>
+      <div className={style.selectSystem}>
+        <h2>Pasirinkite sistema</h2>
+        <ul>
+          <li>
+            <Radio
+              name={"content__navigation"}
+              id={"content__navigation-1"}
+              value={1}
+              checked={content === 1}
+              unicClass={style.content__navigation__buttons}
+              onChange={changeContent}
+            >
               <span>
-                  <b>Kompiuterinė sistema „Serve Professionals”</b>
-                  <p>Į Jūsų kompiuterinę įrangą įdiegiama sistema ir duomenų bazė.</p>
+                <b>Kompiuterinė sistema „Serve Professionals”</b>
+                <p>
+                  Į Jūsų kompiuterinę įrangą įdiegiama sistema ir duomenų bazė.
+                </p>
+              </span>
+            </Radio>
+          </li>
+          <li>
+            <Radio
+              name={"content__navigation"}
+              id={"content__navigation-2"}
+              value={2}
+              checked={content === 2}
+              unicClass={style.content__navigation__buttons}
+              onChange={changeContent}
+            >
+              <span>
+                <b>Naršyklinė sistema „ServePro”</b>
+                <p>
+                  Prie savo sistemos ir duomenų bazės esančios mūsų serveryje
+                  jungiatės per naršyklę.
+                </p>
+              </span>
+            </Radio>
+          </li>
+        </ul>
+      </div>
+      <div className={style.content}>
+        <div className={style.services}>
+          <ul>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  <img src={tooth.src} alt="tooth" />
                 </span>
-                        </Radio>
-                    </li>
-                    <li>
-                        <Radio
-                            name={'content__navigation'}
-                            id={'content__navigation-2'}
-                            value={2}
-                            checked={content === 2}
-                            unicClass={style.content__navigation__buttons}
-                            onChange={changeContent}
-                        >
-                  <span>
-                      <b>Naršyklinė sistema „ServePro”</b>
-                      <p>Prie savo sistemos ir duomenų bazės esančios mūsų serveryje jungiatės per naršyklę.</p>
-                    </span>
-                        </Radio>
-                    </li>
-                </ul>
-            </div>
-            <div>
-            </div>
-            <div className={style.content}>
-                <div className={style.services}>
-                    <ul>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span><img src={tooth.src} alt="tooth" /></span>
-                                <p>Odontologijos klinikos</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span><img src={klinikos.src} alt="klinikos"/></span>
-                                <p>Grožio centrai ir kirpyklos </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span><img src={grozi.src} alt="grozi" /></span>
-                                <p>Odontologijos klinikos</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span> <img src={spa.src} alt="spa" /></span>
-                                <p>SPA ir masažo centrai</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span><img src={reab.src} alt="reab"/></span>
-                                <p>Reabilitacijos centrai</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span> <img src={sporto.src} alt="sporto"/></span>
-                                <p>Sporto centrai</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span><img src={veterinar.src} alt="veterinar"/></span>
-                                <p>Veterinarijos klinikos </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span><img src={autoservisa.src} alt="autoservisa"/></span>
-                                <p>Autoservisu paslaugas</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className={style.servicBlock}>
-                                <span><img src={hands.src} alt="hands"/></span>
-                                <p>Patalpu valymo paslaugos</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                {
-                    content === 1 ?
-                        <ContentOne /> :
-                        <ContentTwo />
-                }
-                <div className={style.right__block}>
-                    <ChooseContract />
-                </div>
-            </div>
+                <p>Odontologijos klinikos</p>
+              </div>
+            </li>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  <img src={klinikos.src} alt="klinikos" />
+                </span>
+                <p>Grožio centrai ir kirpyklos </p>
+              </div>
+            </li>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  <img src={grozi.src} alt="grozi" />
+                </span>
+                <p>Odontologijos klinikos</p>
+              </div>
+            </li>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  {" "}
+                  <img src={spa.src} alt="spa" />
+                </span>
+                <p>SPA ir masažo centrai</p>
+              </div>
+            </li>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  <img src={reab.src} alt="reab" />
+                </span>
+                <p>Reabilitacijos centrai</p>
+              </div>
+            </li>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  {" "}
+                  <img src={sporto.src} alt="sporto" />
+                </span>
+                <p>Sporto centrai</p>
+              </div>
+            </li>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  <img src={veterinar.src} alt="veterinar" />
+                </span>
+                <p>Veterinarijos klinikos </p>
+              </div>
+            </li>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  <img src={autoservisa.src} alt="autoservisa" />
+                </span>
+                <p>Autoservisu paslaugas</p>
+              </div>
+            </li>
+            <li>
+              <div className={style.servicBlock}>
+                <span>
+                  <img src={hands.src} alt="hands" />
+                </span>
+                <p>Patalpu valymo paslaugos</p>
+              </div>
+            </li>
+          </ul>
         </div>
-    );
+        {content === 1 ? <ContentOne /> : <ContentTwo />}
+        <div className={style.right__block}>
+          <ChooseContract />
+        </div>
+      </div>
+    </div>
+  );
 }
