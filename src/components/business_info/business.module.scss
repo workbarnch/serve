@@ -1,55 +1,50 @@
+$text-color: #0f1d5b;
+$white: #fff;
+$orange: #ff9954;
+
 .container {
-  margin: auto;
   background: #f7f6f7 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 10px #00000026;
   border-radius: 10px;
-  width: 100%;
+  height: 650px;
   max-width: 1024px;
-  height: 640px;
-}
+  width: 100%;
+  margin:100px auto;
 
-.title {
-  background: transparent linear-gradient(89deg, #f5f4f5 0%, #ebf3f9 100%) 0% 0%
-    no-repeat padding-box;
-  box-shadow: 0px 2px 3px #0f1d5b26;
-  border-radius: 10px 10px 0px 0px;
-  height: 90px;
-  padding: 19px 50px;
-  text-align: left;
-
-  h2 {
-    letter-spacing: 0px;
-    color: #0f1d5b;
-    font-size: 40px;
+  .title {
+    padding: 20px 55px;
+    background: transparent linear-gradient(89deg, #f5f4f5 0%, #ebf3f9 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0px 2px 3px #0f1d5b26;
+    border-radius: 10px 10px 0px 0px;
+    h3 {
+      font-size: 35px;
+      font-family: sofia-pro, sans-serif;
+      color: $text-color;
+    }
   }
-}
-.inputWrap {
-  display: flex;
-  padding: 50px;
-}
-
-.leftInputs,
-.righInputs
-
- {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-
-
-
-
-  input {
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 3px #00000029;
-    border-radius: 100px;
-    height: 50px;
-    margin: 20px;
+  .inputWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .leftSide{
+      margin-right: 50px;
+    }
   }
+
 }
-.leftInputs{
-    padding-right: 25px;
-}
-.righInputs{
-    padding-left: 25px;
+.buttonWrapp {
+  display: flex;
+  justify-content: end;
+  a {
+    display: flex;
+    align-items: center;
+    background-color:$orange ;
+  }
+  a img{
+    width: 25px;
+    height: 16px;
+    margin-left: 10px;
+  }
 }

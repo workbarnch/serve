@@ -39,32 +39,28 @@ $ipade: 768px;
     flex-direction: column;
     text-align: center;
     margin-top: 20px;
-    a:nth-child(1) {
-      width: 100%;
+    a:hover{
       background-color: $button-color;
+    }  
+    a:hover span{
+      color: $white-color;
+    }
+    a {
+      width: 100%;
+      border: 1px solid $button-color;
       border-radius: 50px;
       padding: 10px 50px;
       margin-bottom: 5px;
     }
-    a:nth-child(1) img,
-    a:nth-child(2) img {
+    a img{
       width: 20px;
       height: 20px;
       margin-right: 10px;
     }
-    a:nth-child(1) span {
-      color: $white-color;
-    }
-    a:nth-child(2) {
-      width: 100%;
-      border-radius: 50px;
-      padding: 10px 50px;
-      border: 1px solid $button-color;
-    }
-
-    a:nth-child(2) span {
+    a span{
       color: $button-color;
     }
+    
   }
 }
 

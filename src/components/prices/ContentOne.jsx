@@ -19,12 +19,10 @@ export default function ContentOne() {
               <div className={style.paragraf1}>
                 <h4>
                   Viskas kas įeina į modulį "Užsakymų registravimo kalendorius"
-                </h4> 
+                </h4>
                 <h2>Papildomai:</h2>
                 <br />
-                <h4>
-                  Užsakymų registravimo kalendorius:
-                </h4>
+                <h4>Užsakymų registravimo kalendorius:</h4>
                 <p>
                   - Laukiančiųjų užregistruoti užsakymų kūrimas;
                   <br /> - Konfidencialūs paslaugų užsakymai;
