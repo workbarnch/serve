@@ -18,6 +18,11 @@ export default function Registration() {
             <SmartInput type={'password'} placeholder={'El. pašto adresas'}/>
             <br/>
             <SmartInput type={'text'} placeholder={'El. pašto adresas'}/>
+            <div style={{marginTop: '10px'}}>
+                <NextButton>
+                    Toliau
+                </NextButton>
+            </div>
         </MiniContainer>
     </div>
   );

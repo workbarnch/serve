@@ -1,4 +1,5 @@
-import BusinessInfo from "../../src/components/business_info/BusinessInfo";
+
+import InputPlace from "../../src/components/InputPlace/InputPlace";
 import Registration from "../../src/components/registration/Registration";
 import img1 from '../../src/images/icons/akis.svg';
 export default function Prisijungti(){
@@ -7,7 +8,7 @@ export default function Prisijungti(){
         <div className="wrapper">
 
          < Registration/>
-
+        <InputPlace/>
         </div>
     )
 }
