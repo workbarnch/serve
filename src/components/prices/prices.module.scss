@@ -2,7 +2,8 @@ $text-color: #0F1D5B;
 $border-color: #9399B5;
 
 $mobile: 480px;
-$ipade: 768px;
+$ipad: 768px;
+$ipadPro: 1024px;
 
 .container {
   padding: 30px 100px;
@@ -180,7 +181,7 @@ $ipade: 768px;
   width: 30%;
 }
 
-@media (max-width: $ipade) {
+@media (max-width:  $ipadPro) {
   .container {
     padding: 20px;
   }
@@ -202,7 +203,6 @@ $ipade: 768px;
 
   .content {
     flex-direction: column;
-
     .services{
       width: 100%;
     }
