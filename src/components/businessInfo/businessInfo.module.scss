@@ -1,0 +1,33 @@
+$ipadPro: 1024px;
+$mobile: 480px;
+$ipad: 768px;
+
+.inputWrap {
+  padding: 30px;
+  display: flex;
+
+  .leftSide {
+    flex: 1 0 50%;
+    margin-right: 15px;
+  }
+  .rightSide {
+    flex: 1 0 50%;
+    margin-left: 15px;
+  }
+  .inputs {
+    display: flex;
+    gap: 20px;
+    div {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: $ipad) {
+  .inputWrap {
+    padding: 0;
+    flex-direction: column;
+    .leftSide {
+      margin-right: 0;
+    }
+  }
+}
