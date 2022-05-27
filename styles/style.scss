@@ -20,7 +20,7 @@ html, body{
 .wrapper{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 112px);
 
 }
 .logo{
@@ -55,3 +55,9 @@ main{
 footer{
 }
 
+@media (max-width: $mobile) {
+  .wrapper{
+
+    min-height: calc(100vh - 226px);
+  }
+}

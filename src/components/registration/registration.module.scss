@@ -6,75 +6,26 @@ $mobile: 480px;
 $ipade: 768px;
 
 .registrWrap {
-  width: 100%;
-  max-width: 500px;
-  height: 600px;
-  margin: auto;
-  background-color: #ffffff;
-  box-shadow: 0px 3px 10px #00000026;
-  border-radius: 10px;
-  .titleWrap {
-    background: transparent linear-gradient(87deg, #f5f4f5 0%, #ebf3f9 100%) 0%
-      0% no-repeat padding-box;
-  }
-  h3 {
-    color: $text-color;
-    font-size: 35px;
-    font-family: sofia-pro, sans-serif;
-    font-weight: 900;
-    padding: 19px 50px;
-  }
 
-  .buttonWrap {
-    display: flex;
-    flex-direction: column;
-    margin: 50px 40px;
-    text-align: center;
-    a {
-      display: flex;
-      align-items: center;
-      padding: 13px 35px;
-      border: 1px solid $orange;
-      border-radius: 50px;
-      margin-bottom: 20px;
-    }
-    a:hover {
-      background-color: #ff9954;
-    }
-    a:hover span {
-      color: #ffffff;
+  .botton{
+    margin-bottom: 25px;
+    transition: .3s;
+    svg{
+      g{
+        transition: .1s;
+        color: $orange
+      }
     }
 
-    a span {
-      color: $orange;
-      font-size: 20px;
-      font-weight: 600;
-      margin-left: 20px;
-    }
-    a img {
-      width: 30px;
-      height: 40px;
-      margin-right: 10px;
+    &:hover{
+      background: $orange;
+      color: #FFFFFF;
+      svg{
+        g{
+          fill: #FFFFFF;
+        }
+      }
     }
   }
 }
-@media (max-width: $mobile) {
-  .registrWrap {
-    width: 100%;
-    margin-top: 60px;
-    box-shadow:none;
-    .titleWrap {
-      background: none;
-    }
 
-    .buttonWrap{
-        margin: 150px 20px;
-    }
-    a{
-        padding: 10px 27px !important;
-    }
-    a span {
-        font-size: 16px !important;
-    }
-  }
-}

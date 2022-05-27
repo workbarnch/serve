@@ -1,0 +1,41 @@
+$color: #8D92A3;
+
+.container{
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input{
+        width: 100%;
+        padding: 12px 0;
+        border: none;
+        font-size: 24px;
+        font-weight: normal;
+        font-family: Roboto, sans-serif;
+        border-bottom: 2px solid $color;
+        border-bottom: 2px solid $color;
+        outline: none;
+        color: $color;
+        &::placeholder{
+            color: $color;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+
+        img{
+            width: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container{
+        min-width: 100%;
+    }
+}

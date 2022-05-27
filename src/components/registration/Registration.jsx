@@ -1,19 +1,24 @@
-import style from "../registration/registration.module.scss";
-import imone from "../../images/icons/imone.svg"
-import usericon from "../../images/icons/zmogus.svg"
+import style from '../registration/registration.module.scss';
+import DefaultButton from '../custom/buttons/DefaultButton';
+import MiniContainer from '../minicontainer/MiniContainer';
+import Imone from "../../svg/Imone";
+import SmartInput from "../custom/smartinput/SmartInput";
+import NextButton from "../custom/buttons/NextButton";
 
 export default function Registration() {
   return (
     <div className={style.registrWrap}>
-      <div className={style.container}>
-        <div className={style.titleWrap}>
-          <h3> Registruotis</h3>
-        </div>
-        <div className={style.buttonWrap}>
-            <a href="#"><img src={imone.src}alt="" /><span>Registruotis įmonės vardu</span> </a>
-            <a href="#"><img src={usericon.src} alt="" /><span>Registruotis fiziniam asmeniui</span></a>
-        </div>
-      </div>
+        <MiniContainer title={'Registruotis'} showAddress address={'El. pašto adresas'} mail={'ingrida.maliaukaite@serve.lt'}>
+            <DefaultButton text={'Registruotis įmonės vardu'} unicClass={style.botton}>
+                <Imone />
+            </DefaultButton>
+            <DefaultButton text={'Registruotis fiziniam asmeniui'} unicClass={style.botton}>
+                <Imone />
+            </DefaultButton>
+            <SmartInput type={'password'} placeholder={'El. pašto adresas'}/>
+            <br/>
+            <SmartInput type={'text'} placeholder={'El. pašto adresas'}/>
+        </MiniContainer>
     </div>
   );
 }
