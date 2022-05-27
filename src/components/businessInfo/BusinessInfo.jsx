@@ -13,7 +13,7 @@ export default function BusinessInfo() {
         <CustomInput type={"text"} placeholder={"Sutartį pasirašančio - vardas, pavardė"}/>
         <CustomInput type={"text"} placeholder={"Sutartį pasirašančio - el. pašto adresas"}/>
       </div>
-      <div classname={style.rightSide}>
+      <div className={style.rightSide}>
         <CustomInput type={"text"} placeholder={"Šalis"}/>
         <CustomInput type={"text"} placeholder={"Miestas"}/>
         <CustomInput type={"text"} placeholder={"Gatvė"}/>
