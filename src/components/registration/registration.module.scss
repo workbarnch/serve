@@ -6,7 +6,6 @@ $mobile: 480px;
 $ipade: 768px;
 
 .registrWrap {
-
   .botton{
     margin-bottom: 25px;
     transition: .3s;
@@ -27,5 +26,18 @@ $ipade: 768px;
       }
     }
   }
+  .nextButton{
+    margin-top: 48px;
+    margin-left: auto;
+  }
 }
+.nextButton{
+  margin-top: 48px;
+  margin-left: auto;
+}
+.userNameWrapp{
+  .inputWrapp{
+    margin-top: 100px;
+  }
 
+}

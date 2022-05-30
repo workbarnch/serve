@@ -1,6 +1,7 @@
 $address-icon-bg: #EBF3F9;
 $title-color: #0F1D5B;
 $address-text-color: #8D92A3;
+$mobileBackground:  #F0F3F7;
 .container {
   max-width: 500px;
   width: 500px;
@@ -15,7 +16,7 @@ $address-text-color: #8D92A3;
     box-shadow: 0 2px 3px #0F1D5B26;
 
     h3 {
-      font-size: 52px;
+      font-size: 40px;
       padding: 20px 50px;
       color: $title-color;
       font-weight: 900;
@@ -77,7 +78,7 @@ $address-text-color: #8D92A3;
     overflow: hidden;
     padding: 60px 40px;
     flex: 1;
-
+    background: $mobileBackground;
     .title {
       background: none;
       box-shadow: none;
