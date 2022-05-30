@@ -17,6 +17,7 @@ $color: #8D92A3;
         border-bottom: 2px solid $color;
         outline: none;
         color: $color;
+        background: none;
         &::placeholder{
             color: $color;
         }
