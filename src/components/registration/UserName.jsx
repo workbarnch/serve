@@ -7,7 +7,7 @@ import style from '../registration/registration.module.scss';
 export default function UserName() {
      return (
         <div className={style.userNameWrapp}>
-             <MiniContainer title={'Prisijungimo vardas'}>
+             <MiniContainer title={'Prisijungimo vardas'} >
                     <div className={style.inputWrapp}>
                         <SmartInput type={'text'} placeholder={'El. pašto adresas'}/>
                     </div>

@@ -1,7 +1,11 @@
-$address-icon-bg: #EBF3F9;
-$title-color: #0F1D5B;
-$address-text-color: #8D92A3;
-$mobileBackground:  #F0F3F7;
+$address-icon-bg: #ebf3f9;
+$title-color: #0f1d5b;
+$address-text-color: #8d92a3;
+$mobileBackground: #f0f3f7;
+$border-color: #9399b5;
+$orange:#FF9954;
+$border-top:#eeeeee;
+
 .container {
   max-width: 500px;
   width: 500px;
@@ -12,8 +16,8 @@ $mobileBackground:  #F0F3F7;
   overflow: hidden;
 
   .title {
-    background: linear-gradient(87deg, #F5F4F5 0%, #EBF3F9 100%);
-    box-shadow: 0 2px 3px #0F1D5B26;
+    background: linear-gradient(87deg, #f5f4f5 0%, #ebf3f9 100%);
+    box-shadow: 0 2px 3px #0f1d5b26;
 
     h3 {
       font-size: 40px;
@@ -29,7 +33,6 @@ $mobileBackground:  #F0F3F7;
     flex-direction: column;
     padding: 50px;
   }
-
 }
 
 .address__container {
@@ -67,6 +70,9 @@ $mobileBackground:  #F0F3F7;
 }
 
 @media (max-width: 480px) {
+  .forgot_password{
+    display: none;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -76,13 +82,12 @@ $mobileBackground:  #F0F3F7;
     box-shadow: none;
     border-radius: 0;
     overflow: hidden;
-    padding: 60px 40px;
+    padding: 60px 20px;
     flex: 1;
     background: $mobileBackground;
     .title {
       background: none;
       box-shadow: none;
-
 
       h3 {
         font-size: 24px;
@@ -98,11 +103,10 @@ $mobileBackground:  #F0F3F7;
       flex: 1;
       padding: 0;
     }
-
   }
   .address__container {
     margin-top: 60px;
-    .address__icon{
+    .address__icon {
       margin-right: 10px;
     }
     .address__icon {
@@ -113,15 +117,13 @@ $mobileBackground:  #F0F3F7;
         width: 16px;
       }
     }
-    .address__content{
-      .address{
+    .address__content {
+      .address {
         font-size: 14px;
       }
-      .mail{
+      .mail {
         font-size: 16px;
       }
     }
   }
 }
-
-

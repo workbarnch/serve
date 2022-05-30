@@ -1,4 +1,5 @@
-import style from "../InputPlace/inputPlace.module.scss";
+import NextButton from "../custom/buttons/NextButton";
+import style from "../inputPlace/inputPlace.module.scss";
 
 export default function InputPlace({children,title}) {
   return (
@@ -9,6 +10,9 @@ export default function InputPlace({children,title}) {
         </div>
         <div className={style.content}>
           {children}
+        </div>
+        <div className={style.nextButton}>
+          <NextButton>Toliau</NextButton>
         </div>
       </div>
     </div>

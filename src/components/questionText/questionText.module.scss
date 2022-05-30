@@ -1,0 +1,31 @@
+$mobile: 480px;
+$title-color: #0f1d5b;
+$orange:#FF9954;
+
+.question_textWrap{
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li{
+        font-size: 21px;
+        font-family: sofia-pro, sans-serif;
+        color:$title-color
+      }
+      li:last-child a{
+        margin-left: 20px;
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .question_textWrap{
+      ul{
+        li{
+          font-size: 18px;
+        }
+      }
+    }
+  }
