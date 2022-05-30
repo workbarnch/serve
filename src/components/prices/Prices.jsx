@@ -13,6 +13,7 @@ import ChooseContract from "../chooseContract/ChooseContract";
 import ContentTwo from "./ContentTwo";
 import { useState } from "react";
 import ContentOne from "./ContentOne";
+import NextButton from "../custom/buttons/NextButton";
 
 export default function Prices() {
   const [content, setContent] = useState(1);
@@ -60,6 +61,7 @@ export default function Prices() {
             </Radio>
           </li>
         </ul>
+        
       </div>
       <div className={style.content}>
         <div className={style.services}>
