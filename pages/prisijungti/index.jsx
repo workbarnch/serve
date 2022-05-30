@@ -1,14 +1,24 @@
-
+import BusinessInfo from "../../src/components/businessInfo/BusinessInfo";
+import NextButton from "../../src/components/custom/buttons/NextButton";
 import InputPlace from "../../src/components/InputPlace/InputPlace";
 import Registration from "../../src/components/registration/Registration";
-import img1 from '../../src/images/icons/akis.svg';
-export default function Prisijungti(){
+import YourData from "../../src/components/yourData/YourData";
 
-    return (
-        <div className="wrapper">
+export default function Prisijungti() {
+  return (
+    <div className="wrapper">
+      <Registration />
+      <div>
+        <InputPlace title={"Jūsų įmonės duomenys"}>
+          <BusinessInfo />
+        </InputPlace>
+      </div>
+      <div>
+        <InputPlace title={"Jūsų duomenys"}>
+          <YourData/>
+        </InputPlace>
+      </div>
 
-         < Registration/>
-        <InputPlace/>
-        </div>
-    )
+    </div>
+  );
 }
