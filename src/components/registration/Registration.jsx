@@ -8,21 +8,14 @@ import NextButton from "../custom/buttons/NextButton";
 export default function Registration() {
   return (
     <div className={style.registrWrap}>
-        <MiniContainer title={'Registruotis'} showAddress address={'El. pašto adresas'} mail={'ingrida.maliaukaite@serve.lt'}>
+        <MiniContainer title={'Registruotis'} >
             <DefaultButton text={'Registruotis įmonės vardu'} unicClass={style.botton}>
                 <Imone />
             </DefaultButton>
             <DefaultButton text={'Registruotis fiziniam asmeniui'} unicClass={style.botton}>
                 <Imone />
             </DefaultButton>
-            <SmartInput type={'password'} placeholder={'El. pašto adresas'}/>
-            <br/>
-            <SmartInput type={'text'} placeholder={'El. pašto adresas'}/>
-            <div style={{marginTop: '10px'}}>
-                <NextButton>
-                    Toliau
-                </NextButton>
-            </div>
+         
         </MiniContainer>
     </div>
   );

@@ -1,6 +1,6 @@
 import style from "../../components/businessInfo/businessInfo.module.scss";
 import CustomInput from "../../components/custom/customInput/CustomInput";
-
+import NextButton from "../custom/buttons/NextButton";
 
 export default function BusinessInfo() {
   return (
@@ -25,5 +25,6 @@ export default function BusinessInfo() {
         <CustomInput type={"text"} placeholder={"Telefono numeris"}/>
       </div>
     </div>
+    
   );
 }

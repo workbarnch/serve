@@ -2,30 +2,48 @@ $text-color: #0f1d5b;
 $border-color: #9399b5;
 $orange: #ff9954;
 
-$mobile: 480px;
-$ipade: 768px;
-
 .registrWrap {
-
-  .botton{
+  .botton {
     margin-bottom: 25px;
-    transition: .3s;
-    svg{
-      g{
-        transition: .1s;
-        color: $orange
+    transition: 0.3s;
+    svg {
+      g {
+        transition: 0.1s;
+        color: $orange;
       }
     }
 
-    &:hover{
+    &:hover {
       background: $orange;
-      color: #FFFFFF;
-      svg{
-        g{
-          fill: #FFFFFF;
+      color: #ffffff;
+      svg {
+        g {
+          fill: #ffffff;
         }
       }
     }
   }
+  .nextButton {
+    margin-top: 48px;
+    margin-left: auto;
+  }
 }
-
+.nextButton {
+  margin-top: 48px;
+  margin-left: auto;
+}
+.userNameWrapp {
+  .inputWrapp {
+    margin-top: 100px;
+  }
+}
+.userPasswordWrapp {
+  .questionWrapp {
+    margin-top: 100px;
+    padding: 20px 0;
+    border-top: 1px solid #999999;
+  }
+}
+.newUser{
+  margin-bottom: 100px;
+}

@@ -5,7 +5,7 @@ import hideIcon from '../../../images/icons/akis_perbraukta.svg';
 
 export default function SmartInput({type, placeholder = '', onChange = () =>{}, name = '', defaultValue = '', unicClass = ''}){
     const [show, setShow] = useState(false)
-
+     
     const eventShowHide = () => {
         setShow(!show)
     }
