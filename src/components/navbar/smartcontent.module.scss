@@ -1,0 +1,97 @@
+$orange: #FF9954;
+$blue: #0F1D5B;
+$border: #D9D9D9;
+
+$desktop: 1440px;
+$ipadPro: 1024;
+$ipad: 768px;
+$mobile: 480px;
+
+.container{
+  display: flex;
+  flex: 1;
+  padding: 50px 0;
+
+  nav{
+    width: 20%;
+    padding-right: 50px;
+    border-right: 1px solid $border;
+    ul{
+      li{
+        span{
+          display: block;
+          padding: 16px 20px;
+          box-shadow: 0 1px 3px #0F1D5B1A;
+          border-radius: 0 100px 100px 0;
+          margin-bottom: 12px;
+          position: relative;
+          font-size: 15px;
+          font-weight: bold;
+          font-family: Roboto, sans-serif;
+          color: $blue;
+          cursor: pointer;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+        .active{
+          &::before{
+            content: '';
+            display: block;
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            background: $orange;
+          }
+        }
+      }
+    }
+  }
+
+}
+.content{
+  padding-left: 60px;
+
+}
+
+
+
+@media (max-width: $desktop) {
+  .container{
+    nav{
+      width: 30%;
+    }
+  }
+}
+@media (max-width: $ipadPro) {
+  .container{
+    nav{
+      width: 40%;
+    }
+  }
+}
+@media (max-width: $ipad) {
+  .container{
+    flex-direction: column;
+    nav{
+      width: 100%;
+      border-right: none;
+      padding-right: 0;
+      ul{
+        li{
+          span{
+            box-shadow: 0 1px 3px #0F1D5B1A;
+            border-radius: 5px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+    .mobile__content{
+      padding: 25px 0;
+    }
+  }
+}
