@@ -12,6 +12,7 @@ header{
     ul{
       display: flex;
       list-style: none;
+
       li{
         a{
           color: $white-text;
@@ -54,7 +55,10 @@ header{
     }
     .header__menu{
       ul{
+        flex-wrap: wrap;
+        justify-content: center;
         li{
+          margin: 10px 0;
           a{
             margin-left: 16px;
           }

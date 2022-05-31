@@ -22,6 +22,9 @@ html, body{
   flex-direction: column;
   min-height: calc(100vh - 112px);
 
+  .container{
+    padding: 0 100px;
+  }
 }
 .logo{
   h3{
@@ -54,10 +57,12 @@ main{
 }
 
 
-
 @media (max-width: $mobile) {
   .wrapper{
     background: #F0F3F7;
     min-height: calc(100vh - 226px);
+    .container{
+      padding: 0 20px;
+    }
   }
 }
