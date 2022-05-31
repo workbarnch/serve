@@ -15,18 +15,18 @@ export default function Prisijungti() {
   return (
     <div className="wrapper">
           <UserPassword/>
-       {/*<LoginReg/>*/}
-       {/*<Registration />*/}
-       {/*/!*<div>*!/*/}
-       {/* <InputPlace title={"Jūsų įmonės duomenys"}>*/}
-       {/*   <BusinessInfo />*/}
-       {/* </InputPlace>*/}
-       {/*</div> */}
+      {/* <LoginReg/>   */}
+      {/* <Registration /> */}
       {/* <div>
-        <InputPlace title={"Jūsų duomenys"}>
-          <YourData/>
+        <InputPlace title={"Jūsų įmonės duomenys"}>
+          <BusinessInfo />
         </InputPlace>
-      </div> */}
+      // </div> */}
+      {/*<div>*/}
+      {/*  <InputPlace title={"Jūsų duomenys"}>*/}
+      {/*    <YourData/>*/}
+      {/*  </InputPlace>*/}
+      {/*</div>*/}
 
     </div>
   );

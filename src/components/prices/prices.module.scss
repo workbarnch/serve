@@ -133,7 +133,7 @@ $ipadPro: 1024px;
 }
 
 .modules {
-  width: 45%;
+  width: 50%;
 
   .module {
     border: 1px solid $border-color;
@@ -196,7 +196,7 @@ $ipadPro: 1024px;
 }
 
 .right__block {
-  width: 35%;
+  width: 30%;
   margin-left: 20px;
 }
 
@@ -205,7 +205,7 @@ $ipadPro: 1024px;
     color: $orange;
     margin-top: 15px;
     margin-bottom: -15px;
-    font-size: 20px;
+    font-size: 16px;
   }
   h4 {
     font-size: 15px;
@@ -218,7 +218,7 @@ $ipadPro: 1024px;
   ul li {
     color: $text-color;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 16px;
     text-align: left;
   }
   .paragraf3 {
@@ -228,8 +228,17 @@ $ipadPro: 1024px;
     margin-left: 40px;
   }
 }
-
-@media (max-width:  $ipadPro) {
+@media (min-width: $ipadPro) {
+  .container {
+    padding: 30px 15px;
+  }
+  .modules {
+    .module {
+      padding: 20px;
+    }
+  }
+}
+@media (max-width: $ipadPro) {
   .container {
     padding: 20px;
   }
@@ -253,7 +262,7 @@ $ipadPro: 1024px;
 
   .content {
     flex-direction: column;
-    .services{
+    .services {
       width: 100%;
     }
     .modules {
