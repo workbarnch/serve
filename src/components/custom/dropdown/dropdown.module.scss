@@ -71,5 +71,18 @@ $ipade: 768px;
 @media (max-width: $ipade) {
   .dropdown__content{
       background:none;
+
+  }
+}
+@media (max-width: $mobile) {
+  .dropdown{
+    width: 100%;
+    .dropdown__title{
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 14px;
+      }
+    }
   }
 }

@@ -22,7 +22,7 @@ export default function DropDown(props) {
         <div className={style.dropdown}>
             <div className={titleClass} onClick={handleClick}>
                 <span>{props.title ? props.title : 'DropDown'}</span>
-                <div className={arrowClass}></div>
+                <div className={`${arrowClass} ${props.arrowUnicClass?props.arrowUnicClass:''}`}></div>
             </div>
             {
                 isOpen && props.children?

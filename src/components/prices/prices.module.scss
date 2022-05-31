@@ -155,11 +155,30 @@ $ipadPro: 1024px;
       position: relative;
       margin: 10px 0;
 
-      .price {
-        white-space: nowrap;
+      .module__item_right{
         position: absolute;
         right: 0;
+        display: flex;
+        align-items: center;
+        .price {
+          white-space: nowrap;
+          font-size: 14px;
+          font-weight: bold;
+          color: $text-color;
+        }
+        .info__icon{
+          margin-left: 20px;
+          width: 16px;
+          display: none;
+
+          svg{
+            g,path{
+              fill: $text-color;
+            }
+          }
+        }
       }
+
 
       .modules__checkbox {
         margin: 0;
@@ -243,6 +262,7 @@ $ipadPro: 1024px;
       .module {
         border: none;
         padding: 30px 0;
+
       }
     }
   }
@@ -262,6 +282,39 @@ $ipadPro: 1024px;
     }
     .paragraf4 {
       margin-left: 25px;
+    }
+  }
+}
+
+
+@media (max-width: $mobile) {
+  .dropdown__container{
+    width: 65%;
+    display: flex;
+    align-items: center;
+
+    .dropdown__arrow{
+      display: none!important;
+    }
+  }
+  .modules__items {
+    .module__item_right{
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      .price {
+        white-space: nowrap;
+      }
+      .info__icon{
+        display: block!important;
+      }
+    }
+
+
+    .modules__checkbox {
+      margin: 0;
+      margin-right: 15px;
     }
   }
 }

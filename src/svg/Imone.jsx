@@ -1,7 +1,7 @@
 
 export default function Imone({unicClass}) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.01 94.1" className={unicClass}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.01 94.1" className={`svg__icon ${unicClass}`}>
             <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_1-2" fill={'#FF9954'} data-name="Layer 1">
                     <path
@@ -11,3 +11,4 @@ export default function Imone({unicClass}) {
         </svg>
     )
 }
+
