@@ -61,7 +61,6 @@ export default function Prices() {
             </Radio>
           </li>
         </ul>
-        
       </div>
       <div className={style.content}>
         <div className={style.services}>

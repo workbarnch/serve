@@ -22,11 +22,11 @@ export default function Prisijungti() {
           <BusinessInfo />
         </InputPlace>
       // </div> */}
-      {/* <div>
+      <div>
         <InputPlace title={"Jūsų duomenys"}>
           <YourData/>
         </InputPlace>
-      </div> */}
+      </div>
 
     </div>
   );

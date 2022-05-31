@@ -3,9 +3,9 @@ $border-color: #9399b5;
 $ul-color:#f7f6f7;
 $button-color:#ff9954;
 $white-color: #fff;
+$ipadPro: 1025px;
 $mobile: 480px;
 $ipade: 768px;
-
 
 .buyContent {
   width: 100%;
@@ -64,3 +64,24 @@ $ipade: 768px;
   }
 }
 
+@media (min-width: $ipadPro) {
+  .buyContent{
+    ul{
+      padding: 0 15px;
+      li{
+        .textWrap{
+          margin-top: -5px;
+          p{
+            font-size: 16px;
+          }
+        }
+        .priceWrap {
+
+          span b {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
