@@ -23,7 +23,7 @@ export default function Header() {
                     </li>
                     <li className={router.pathname == "/funkcijos" ? "active" : ""}>
                         <Link href='/funkcijos'>
-                            <a>Funkcijos</a>
+                            <a>Atsiliepimai</a>
                         </Link>
                     </li>
                     <li className={router.pathname == "/kontaktai" ? "active" : ""}>
@@ -31,9 +31,14 @@ export default function Header() {
                             <a>Kontaktai</a>
                         </Link>
                     </li>
-                    <li className={router.pathname == "/prisijungti" ? "active" : ""}>
-                        <Link href='/prisijungti'>
-                            <a>Prisijungti</a>
+                    <li className={router.pathname == "/manoserve" ? "active" : ""}>
+                        <Link href='/manoserve'>
+                            <a>Mano Serve</a>
+                        </Link>
+                    </li>
+                    <li className={router.pathname == "/atsijungti" ? "active" : ""}>
+                        <Link href='/atsijungti'>
+                            <a>Atsijungti</a>
                         </Link>
                     </li>
                 </ul>
