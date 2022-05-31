@@ -1,4 +1,5 @@
 import PageTitle from "../../src/components/pagetitle/PageTitle";
+import HandServe from "../../src/components/payment _methods/HandServe";
 
 
 export default function ManoServe(){
@@ -6,7 +7,7 @@ export default function ManoServe(){
         <div className='wrapper'>
             <PageTitle title="Planai ir mokėjimo būdai" />
             <div className='container'>
-
+               <HandServe/>
             </div>
         </div>
     )

@@ -1,0 +1,185 @@
+$text-color: #0f1d5b;
+$border-color: #9399b5;
+$background: #f7f6f7;
+$orange: #ff9954;
+$unicTextColor: #b2b4b9;
+
+$mobile: 480px;
+$ipad: 768px;
+$ipadPro: 1024px;
+
+.container {
+  margin: 50px;
+  width: 100%;
+  .titleWrap {
+    font-size: 30px;
+    font-family: sofia-pro, sans-serif;
+    color: $text-color;
+  }
+  .content {
+    padding: 30px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+  }
+  .leftCol {
+    width: 40%;
+    h3 {
+      color: $text-color;
+      font-family: sofia-pro, sans-serif;
+      font-size: 24px;
+      text-align: left;
+      font-weight: 600;
+    }
+    ul {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      li {
+        font-size: 18px;
+        line-height: 33px;
+        font-weight: 400;
+        color: $text-color;
+      }
+    }
+  }
+  .rightCol {
+    width: 60%;
+    margin-left: 10px;
+    .employeeWrap {
+      padding: 30px;
+      background-color: $background;
+      border-radius: 10px;
+      ul {
+        li {
+          display: flex;
+          .ml {
+            margin-left: auto;
+          }
+          &:nth-child(1) {
+            margin-bottom: 38px;
+            div {
+              color: $text-color;
+              font-size: 24px;
+              font-family: sofia-pro, sans-serif;
+              font-weight: 600;
+            }
+          }
+          &:nth-child(2) {
+            margin-bottom: 24px;
+            div h2 {
+              margin-bottom: 8px;
+              color: $text-color;
+              font-size: 24px;
+              font-family: sofia-pro, sans-serif;
+              font-weight: 600;
+            }
+            div p {
+              font-size: 18px;
+              color: $unicTextColor;
+              font-family: Roboto, sans-serif;
+            }
+            div span {
+              font-size: 18px;
+              color: $orange;
+              text-decoration: line-through;
+              font-weight: 600;
+            }
+          }
+          &:nth-child(3) {
+            font-size: 18px;
+            color: $unicTextColor;
+            font-family: Roboto, sans-serif;
+          }
+        }
+      }
+    }
+    .buttonWrap {
+      div {
+        padding: 10px 0;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background: $orange;
+            color: #ffffff;
+            svg {
+              g {
+                fill: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $ipadPro) {
+  .container {
+    margin: 0;
+    .content {
+      padding: 0;
+      flex-direction: column;
+      border: none;
+    }
+    .leftCol,
+    .rightCol {
+      margin-top: 20px;
+      width: 100%;
+    }
+    .rightCol {
+      margin-left: 0;
+      .employeeWrap {
+        padding: 15px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .container {
+    background-color: #ffffff;
+    .titleWrap {
+      font-size: 24px;
+    }
+
+    .leftCol {
+      h3 {
+        font-size: 18px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+    .rightCol {
+        .employeeWrap {
+          ul {
+            li {
+              &:nth-child(1) {
+                div {
+                  font-size: 18px;
+                }
+              }
+              &:nth-child(2) {
+                div h2 {
+                  font-size: 18px;
+                }
+                div p {
+                  font-size: 14px;
+                }
+                div span {
+                  font-size: 18px;
+                }
+              }
+              &:nth-child(3) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+    }
+  }
+}

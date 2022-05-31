@@ -11,6 +11,7 @@
   text-decoration: none;
   list-style: none;
 }
+$white:#FFFFFF;
 
 html, body{
   width: 100%;
@@ -56,13 +57,21 @@ main{
   flex: 1;
 }
 
+@media (max-width: 768px){
+  .wrapper{
+    .container{
+      padding: 0 55px;
+    }
+  }
+}
 
-@media (max-width: $mobile) {
+@media (max-width: 480px) {
   .wrapper{
     background: #F0F3F7;
     min-height: calc(100vh - 226px);
     .container{
       padding: 0 20px;
+      background-color: $white;
     }
   }
 }
